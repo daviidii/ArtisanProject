@@ -1,0 +1,89 @@
+@mixin media-query($breakpoint) {
+  @if $breakpoint == _phone {
+    @media (max-width: 32em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == _480px {
+    @media (max-width: 30em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == _768px {
+    @media (max-width: 48em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == _1024px {
+    @media (max-width: 61.875em) {
+      @content;
+    }
+  }
+  @if $breakpoint == _2560px {
+    @media (max-width: 160em) {
+      @content;
+    }
+  }
+}
+
+@mixin hoverEffect {
+  &:hover {
+    background-color: #849b88;
+    transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+  }
+}
+
+@mixin hoverEffectChangeText {
+  &:hover {
+    color: $color-dark;
+    transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+  }
+}
+
+@mixin hoverEffectDark {
+  &:hover {
+    color: $color-light;
+    background-color: $color-dark;
+    transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+  }
+}
+
+@mixin overlay {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $overlay-color;
+  }
+}
+
+@mixin elementAfter {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(1);
+
+    width: 100%;
+    height: 1px;
+
+    background: $color-dark;
+    transform-origin: right;
+    transition: transform 0.3s $transition-animation-default;
+  }
+}
+
+@mixin elementAfterAnimation {
+  &:hover::after {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s $transition-animation-default;
+  }
+}

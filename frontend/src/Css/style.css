@@ -1,0 +1,1282 @@
+.categories__cat-1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../Assets/LandingImages/vase-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  padding: 15rem 4.4rem;
+}
+.categories__cat-1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(14, 22, 16, 0.3);
+}
+
+.categories__cat-2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../Assets/LandingImages/candle-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  padding: 15rem 4.4rem;
+}
+.categories__cat-2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(14, 22, 16, 0.3);
+}
+
+.categories__cat-3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../Assets/LandingImages/ceramic-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  padding: 15rem 4.4rem;
+}
+.categories__cat-3::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(14, 22, 16, 0.3);
+}
+
+.collections__bg--1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../Assets/LandingImages/collection-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.collections__bg--1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(14, 22, 16, 0.3);
+}
+
+.collections__bg--2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../Assets/LandingImages/collection-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.collections__bg--2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(14, 22, 16, 0.3);
+}
+
+.collections__bg--3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../Assets/LandingImages/collection-3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.collections__bg--3::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(14, 22, 16, 0.3);
+}
+
+.collections__bg--4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../Assets/LandingImages/collection-4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.collections__bg--4::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(14, 22, 16, 0.3);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #f4f8f5;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.App {
+  position: relative;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  color: #0e1610;
+}
+
+.mw-1440 {
+  margin: auto;
+}
+@media (max-width: 160em) {
+  .mw-1440 {
+    max-width: 144rem;
+  }
+}
+
+.link-btn {
+  position: relative;
+  width: max-content;
+}
+.link-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(1);
+  width: 100%;
+  height: 1px;
+  background: #0e1610;
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.link-btn:hover::after {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.btn-oval {
+  font-family: "Playfair Display SC", serif;
+  font-size: 2rem;
+  padding: 1.2rem 4.8rem;
+  border-radius: 90rem;
+  border: 1px solid;
+  width: max-content;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.btn-oval:hover {
+  background-color: #849b88;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.btn-normal {
+  font-family: "Playfair Display SC", serif;
+  font-size: 2rem;
+  padding: 1.2rem 4.8rem;
+  border: 1px solid;
+  width: max-content;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.btn-normal:hover {
+  color: #f4f8f5;
+  background-color: #0e1610;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.btn-text {
+  position: relative;
+  font-size: 1.8rem;
+  background-color: transparent;
+  border: 0;
+}
+.btn-text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(1);
+  width: 100%;
+  height: 1px;
+  background: #0e1610;
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.btn-text:hover::after {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.input-field {
+  width: 100%;
+  padding: 1rem 1.75rem;
+  border: 1px solid rgba(86, 92, 88, 0.3);
+  background-color: transparent;
+  color: #0e1610;
+}
+.input-field:focus {
+  outline-width: 1px;
+  outline-color: #849b88;
+}
+.input-field::placeholder {
+  font-weight: 300;
+}
+
+.input-label {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 0.45rem;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mw-max {
+  max-width: max-content;
+}
+
+.checkout-mw {
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 1.2rem;
+}
+
+.divider {
+  min-height: 1px;
+  width: 100%;
+  background: rgba(86, 92, 88, 0.3);
+}
+
+.transition-default {
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.offset {
+  margin-bottom: 8rem;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+  background-color: #f4f8f5;
+  top: 0;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+  box-shadow: 0 2px 30px 0 rgba(86, 92, 88, 0.3);
+}
+
+.hidden {
+  transform: translateY(-100%);
+}
+
+.visible {
+  transform: translateY(0);
+}
+
+.form-check-input:checked {
+  background-color: #0e1610;
+  border-color: #0e1610;
+}
+
+.form-check-input:focus {
+  border-color: #565c58;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(86, 92, 88, 0.3);
+}
+
+.min-h-100 {
+  min-height: 100vh;
+}
+
+.navigation {
+  position: relative;
+}
+.navigation__heading {
+  padding: 3.4rem 0;
+  border-bottom: 0.5px solid rgba(14, 22, 16, 0.3);
+  box-shadow: 0 2px 20px rgba(86, 92, 88, 0.3);
+}
+.navigation__wrapper {
+  width: 100%;
+}
+.navigation__title {
+  font-family: "Playfair Display SC", serif;
+  font-size: 3.2rem;
+}
+.navigation__navbar {
+  width: 100%;
+  padding: 2.4rem 4.8rem;
+}
+.navigation__collapse-nav {
+  justify-content: space-between;
+}
+.navigation__item:not(:last-child) {
+  margin-right: 2.4rem;
+}
+.navigation__link {
+  text-transform: uppercase;
+}
+
+.hero {
+  padding: 0;
+}
+.hero__heading {
+  position: relative;
+  background-image: url("../Assets/LandingImages/Hero-img.jpg");
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  height: 60rem;
+}
+.hero__heading::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(14, 22, 16, 0.3);
+}
+.hero__body > *:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+.hero__header, .hero__subheader, .hero__link {
+  color: #f4f8f5;
+  z-index: 2;
+}
+.hero__header {
+  font-family: "Playfair Display SC", serif;
+  font-size: clamp(3.3594rem, 3.1581rem + 1.0063vw, 4.7681rem);
+}
+.hero__subheader {
+  font-weight: 300;
+  font-size: clamp(1.9438rem, 1.8727rem + 0.3554vw, 2.4413rem);
+}
+.hero__link {
+  border-color: #f4f8f5;
+}
+
+.favorites__card {
+  padding: 3.4rem;
+}
+.favorites__card:not(:last-child) {
+  border-right: 0.5px solid rgba(14, 22, 16, 0.3);
+}
+.favorites__title {
+  font-family: "Playfair Display SC", serif;
+  font-size: 2.4rem;
+}
+.favorites__subtitle {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.favorites__link {
+  font-family: "Playfair Display SC", serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.categories__body {
+  width: min-content;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+.categories__title {
+  text-transform: uppercase;
+  font-family: "Playfair Display SC", serif;
+  color: #f4f8f5;
+  font-size: 3.4rem;
+  z-index: 2;
+  margin-bottom: 4.2rem;
+}
+.categories__icon-wrapper {
+  z-index: 2;
+  padding: 1.4rem;
+  width: max-content;
+  border: 0.5px solid #f4f8f5;
+  border-radius: 50rem;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.categories__icon-wrapper:hover {
+  background-color: #849b88;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.about__row {
+  padding: 0;
+}
+.about__row > *:not(:last-child) {
+  border-right: 0.5px solid rgba(14, 22, 16, 0.3);
+}
+.about__row > * {
+  border-bottom: 0.5px solid rgba(14, 22, 16, 0.3);
+}
+.about__main-content {
+  border-bottom: 0.5px solid rgba(14, 22, 16, 0.3);
+  padding: 3.2rem;
+}
+.about__main-content-wrapper {
+  height: 100%;
+}
+.about__main-text {
+  margin-top: 3.2rem;
+}
+.about__img-container {
+  padding: 0;
+}
+.about__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.about__body {
+  padding: 3.2rem;
+}
+.about__body:first {
+  background-color: #bcddc2;
+}
+.about__heading {
+  font-family: "Playfair Display SC", serif;
+  font-size: 2.4rem;
+  color: #0e1610;
+}
+.about__text {
+  margin-top: 20rem;
+}
+.about__link-btn {
+  margin-top: auto;
+}
+.about__link {
+  font-family: "Playfair Display SC", serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.about__text, .about__main-text {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #565c58;
+}
+
+.faq__title {
+  font-family: "Playfair Display", serif;
+  font-size: 3.4rem;
+  margin: 2.4rem 0;
+}
+.faq__body {
+  background-color: #f4f8f5;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.8rem;
+}
+.faq__item {
+  border-right: none;
+  border-left: none;
+}
+.faq__button {
+  padding: 2.4rem 2.4rem;
+  font-size: 2rem;
+  font-family: "Playfair Display SC", serif;
+  background-color: #f4f8f5;
+}
+.faq__button:not(.collapsed) {
+  color: #0e1610;
+  background-color: #f4f8f5;
+}
+.faq__button:focus {
+  border-color: #849b88;
+  box-shadow: 0 0 0 0.25rem #849b88;
+}
+.faq__answer {
+  color: #0e1610;
+  font-weight: 300;
+}
+
+.blogs {
+  margin-bottom: 4.4rem;
+}
+.blogs__body {
+  padding: 0;
+  margin-top: 2.4rem;
+}
+.blogs__img-box {
+  position: relative;
+}
+.blogs__img-box::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(14, 22, 16, 0.3);
+}
+.blogs__img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+.blogs__title {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  margin-top: 2.4rem;
+  font-weight: 700;
+}
+.blogs__misc {
+  color: #565c58;
+  font-size: 1.6rem;
+}
+.blogs__link {
+  border-color: #0e1610;
+}
+
+.newsletter {
+  height: 70rem;
+  padding: 2.4rem;
+  margin-bottom: 10rem;
+  position: relative;
+  background-image: url("../Assets/LandingImages/newsletter-1.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #f4f8f5;
+}
+.newsletter::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(14, 22, 16, 0.3);
+}
+@media (max-width: 30em) {
+  .newsletter {
+    padding: 1.8rem;
+  }
+}
+.newsletter__body {
+  position: relative;
+  height: 100%;
+  z-index: 99;
+}
+.newsletter__title {
+  font-size: clamp(3.4rem, 7vw + 1rem, 6rem);
+  font-weight: 300;
+  text-transform: uppercase;
+  max-width: 64rem;
+}
+.newsletter__top {
+  gap: 5rem;
+}
+@media (max-width: 30em) {
+  .newsletter__top {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+}
+.newsletter__inq {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.newsletter__list {
+  padding: 0;
+  list-style: none;
+}
+.newsletter__info-item {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+.newsletter__subheading {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.newsletter__input {
+  padding: 1.2rem 2.4rem;
+  font-size: 1.8rem;
+  border: 0.5px solid rgba(14, 22, 16, 0.3);
+  border-color: #f4f8f5;
+  background-color: transparent;
+  color: #f4f8f5;
+}
+.newsletter__input::placeholder {
+  color: #f4f8f5;
+}
+.newsletter__input:focus {
+  background-color: transparent;
+  color: #f4f8f5;
+}
+.newsletter__submit {
+  font-size: 1.8rem;
+  color: #0e1610;
+  border: 0.5px solid rgba(14, 22, 16, 0.3);
+  border-color: #f4f8f5;
+  background-color: #f4f8f5;
+  padding: 1rem 1.2rem;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.newsletter__submit:hover, .newsletter__submit:focus {
+  border: 0.5px solid rgba(14, 22, 16, 0.3);
+  border-color: #f4f8f5;
+  background: #849b88;
+  color: #f4f8f5;
+}
+
+.footer {
+  padding: 2.4rem 4.8rem;
+}
+.footer__title {
+  font-family: "Playfair Display SC", serif;
+  font-size: 4.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footer__header {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 2.8rem;
+}
+.footer__copy, .footer__terms {
+  display: block;
+  font-size: 1.4rem;
+  color: #565c58;
+}
+.footer__list {
+  padding: 0;
+  list-style: none;
+}
+.footer__list > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.footer__item {
+  color: #565c58;
+}
+.footer__link {
+  color: #565c58;
+  transition: cubic-bezier(0.45, 0, 0.55, 1);
+}
+.footer__link:hover {
+  color: #0e1610;
+}
+
+.collections__item {
+  height: 50rem;
+  padding: 1.2rem;
+}
+.collections__item:hover .collections__title {
+  color: #bcddc2;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.collections__item:hover .collections__icon-wrapper {
+  background-color: #849b88;
+  border-color: #849b88;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.collections__bg {
+  height: 100%;
+}
+.collections__title {
+  font-family: "Playfair Display SC", serif;
+  font-size: clamp(2.7994rem, 2.7549rem + 0.2223vw, 3.1106rem);
+  color: #f4f8f5;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.collections__body {
+  position: relative;
+  padding: 2.4rem;
+  z-index: 99;
+}
+.collections__icon-wrapper {
+  width: max-content;
+  padding: 1.2rem;
+  margin: 2rem 0;
+  border: 0.5px solid rgba(14, 22, 16, 0.3);
+  border-color: #f4f8f5;
+  border-radius: 90rem;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.all-products {
+  height: 100%;
+  min-height: 100vh;
+  margin-bottom: 9rem;
+}
+
+.category-filter__label {
+  font-size: 1.6rem;
+}
+.category-filter__input {
+  display: inline-block;
+  margin-right: 0.75rem;
+}
+.category-filter__btn {
+  font-size: 1.6rem;
+  background-color: #f4f8f5;
+}
+.category-filter__btn:not(.collapsed) {
+  color: #0e1610;
+  background-color: #f4f8f5;
+}
+.category-filter__btn:focus {
+  border-color: #849b88;
+  box-shadow: 0 0 0 0.25rem #849b88;
+}
+.category-filter__header {
+  background-color: #f4f8f5;
+  border: 1px solid rgba(14, 22, 16, 0.4);
+}
+.category-filter__body {
+  background-color: #f4f8f5;
+}
+
+.product-item__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.product-item__img-box {
+  width: 100%;
+  height: 30rem;
+  border: none;
+  background-color: transparent;
+}
+.product-item__name {
+  font-family: "Playfair Display SC", serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  border: none;
+  background: transparent;
+  text-align: left;
+}
+.product-item__btn {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.breadcrumb {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #565c58;
+}
+.breadcrumb > * {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.breadcrumb > *:not(:last-child)::after {
+  content: "/";
+  margin-left: 1rem;
+}
+
+.crumb {
+  transition: all 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.crumb:hover {
+  color: #0e1610;
+}
+
+.product-modal__box {
+  padding: 3.4rem;
+}
+.product-modal__body {
+  padding: 4.4rem;
+}
+.product-modal__dialog {
+  max-width: 1440px;
+}
+.product-modal__content {
+  background-color: #f4f8f5;
+  color: #0e1610;
+  border-radius: 0;
+}
+.product-modal__title {
+  font-family: "Playfair Display SC", serif;
+  font-size: clamp(2.7994rem, 2.7549rem + 0.2223vw, 3.1106rem);
+}
+.product-modal__description {
+  font-size: clamp(1.62rem, 1.5724rem + 0.2379vw, 1.9531rem);
+  font-weight: 300;
+  color: #565c58;
+}
+.product-modal__price {
+  font-size: 1.8rem;
+}
+.product-modal__stock {
+  color: #9a9d9b;
+  font-size: 1.4rem;
+}
+.product-modal__btn {
+  position: relative;
+  border: 0;
+  padding: 1rem 1.2rem;
+  margin-right: 1rem;
+  background: transparent;
+}
+.product-modal__btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(1);
+  width: 100%;
+  height: 1px;
+  background: #0e1610;
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.product-modal__btn:hover::after {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.product-modal__img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.accounts {
+  height: 90vh;
+}
+.accounts__body {
+  width: 60%;
+  margin-top: 8rem;
+}
+.accounts__title {
+  font-family: "Playfair Display SC", serif;
+  font-size: clamp(4.0313rem, 3.7556rem + 1.3781vw, 5.9606rem);
+}
+.accounts__input-box {
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+.accounts__forgot-pw {
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.accounts__forgot-pw:hover {
+  color: #0e1610;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.accounts__submit {
+  margin-top: 4.4rem;
+  width: 100%;
+}
+.accounts__show-pw {
+  visibility: hidden;
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 1rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.accounts__show-pw.show {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.accounts__show-pw-icon {
+  height: 34px;
+}
+.accounts__pw-input-box {
+  position: relative;
+}
+
+.basket {
+  background-color: #f4f8f5;
+}
+.basket__footer {
+  padding: 2.4rem;
+}
+.basket__checkout-btn {
+  text-transform: uppercase;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 600;
+  border: 1px solid #565c58;
+  padding: 2.4rem;
+}
+.basket__header {
+  padding: 2.4rem;
+}
+.basket__text {
+  display: block;
+  color: #565c58;
+}
+.basket__title {
+  text-transform: uppercase;
+  font-family: "Playfair Display SC", serif;
+  font-size: clamp(2.7994rem, 2.7549rem + 0.2223vw, 3.1106rem);
+}
+
+.bsk-item {
+  padding: 2.4rem;
+}
+.bsk-item:not(:last-child) {
+  border-bottom: 1px solid #cacbca;
+}
+.bsk-item__body {
+  height: 10rem;
+}
+.bsk-item__img-box {
+  padding: 0;
+  height: 100%;
+}
+.bsk-item__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.bsk-item__content {
+  padding: 1.2rem;
+}
+.bsk-item__buttons {
+  padding: 0;
+}
+.bsk-item__rmv {
+  width: max-content;
+}
+.bsk-item__counter {
+  width: 100%;
+}
+.bsk-item__counter > * {
+  flex: 1 1 33.33%;
+}
+.bsk-item__btn {
+  border: none;
+}
+.bsk-item__product-name {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 600;
+}
+
+.offcanvas.offcanvas-start.basket {
+  width: 100%;
+  max-width: 70rem;
+}
+
+.profile__title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.7994rem, 2.7549rem + 0.2223vw, 3.1106rem);
+  font-weight: 300;
+}
+.profile__list {
+  padding: 0;
+  list-style: none;
+}
+.profile__link {
+  position: relative;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #565c58;
+  transition: color 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.profile__link:hover {
+  color: #0e1610;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.profile__link.active {
+  text-decoration: underline;
+  color: #0e1610;
+}
+.profile__item {
+  padding: 0.5rem 0;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.profile__logout {
+  height: min-content;
+  border: 0;
+  background-color: transparent;
+  transition: color 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.information__info {
+  font-weight: 300;
+}
+.information__details.hide {
+  display: none;
+}
+.information__edit-form {
+  border: 1px solid rgba(86, 92, 88, 0.3);
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 3.4rem;
+}
+
+.address__isdefault {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.address__update-btn {
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+.address__edit-form {
+  padding: 3.4rem 2rem;
+  border: 1px solid rgba(86, 92, 88, 0.3);
+}
+.address__editSubmit {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.checkout__left {
+  min-height: 100vh;
+  padding: 0;
+}
+.checkout__right {
+  padding: 0;
+  background-color: #90a493;
+}
+@media (max-width: 48em) {
+  .checkout__right {
+    visibility: hidden;
+  }
+}
+.checkout__heading {
+  padding: 0 3.2rem;
+  margin-top: 1rem;
+}
+.checkout__title {
+  font-size: clamp(3.3594rem, 3.1581rem + 1.0063vw, 4.7681rem);
+  font-family: "Playfair Display SC", serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.checkout__shipping {
+  color: #565c58;
+}
+.checkout__basket {
+  width: 100%;
+  height: 100%;
+}
+.checkout__total {
+  font-size: 2rem;
+}
+
+.summary {
+  display: none;
+  transition: all 0.3 cubic-bezier(0.45, 0, 0.55, 1);
+}
+@media (max-width: 61.875em) {
+  .summary {
+    display: block;
+    width: 100%;
+  }
+}
+.summary__header {
+  padding: 0 2.4rem;
+  background-color: transparent;
+  border: 1px solid rgba(86, 92, 88, 0.3);
+  background-color: #ced7cf;
+}
+.summary__body {
+  background-color: transparent;
+}
+.summary__basket {
+  background-color: #90a493;
+}
+
+.order-item {
+  padding: 3.4rem 0;
+}
+.order-item:not(:last-of-type) {
+  border-bottom: 1px solid rgba(86, 92, 88, 0.3);
+}
+.order-item__img-box {
+  width: 12rem;
+  height: 10rem;
+  padding: 1rem;
+  background-color: #ced7cf;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.order-item__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.order-item__product-name {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.62rem, 1.5724rem + 0.2379vw, 1.9531rem);
+}
+.order-item__product-collection, .order-item__count {
+  font-size: 1.2rem;
+  color: rgba(14, 22, 16, 0.7);
+}
+.order-item__price {
+  font-size: 1.4rem;
+}
+
+.accordion-btn {
+  width: 100%;
+  padding: 1.2rem 0;
+  background-color: transparent;
+  border: 0;
+}
+
+.delivery {
+  border: 1px solid rgba(86, 92, 88, 0.3);
+}
+.delivery__header {
+  font-size: 1.4rem;
+}
+.delivery__address {
+  font-size: 1.8rem;
+}
+.delivery__address--2 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.delivery__btn {
+  font-size: 1.4rem;
+  padding: 0.5rem 0.75rem;
+  background-color: transparent;
+  border: 1px solid #565c58;
+}
+.delivery__btn:hover {
+  color: #f4f8f5;
+  background-color: #0e1610;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.delivery__editAddressBtn {
+  border: none;
+  background-color: transparent;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.delivery__modal {
+  max-width: 87.5rem;
+}
+.delivery__modal-title {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.delivery__address-list-header {
+  font-weight: 600;
+}
+.delivery__modal-confirmBtn {
+  font-family: inherit;
+  font-size: 1.6rem;
+  padding: 0.5rem 1.75rem;
+}
+
+.order-history {
+  border: 1px solid rgba(86, 92, 88, 0.3);
+}
+.order-history__heading {
+  border-bottom: 1px solid rgba(86, 92, 88, 0.3);
+  background-color: #0e1610;
+  color: #f4f8f5;
+}
+.order-history__footer {
+  border-top: 1px solid rgba(86, 92, 88, 0.3);
+}
+.order-history__status {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.order-history__totalprice {
+  font-size: 1.8rem;
+}
+.order-history__footer-details {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=style.css.map */

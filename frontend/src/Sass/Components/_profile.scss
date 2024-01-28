@@ -1,0 +1,76 @@
+.profile {
+  &__title {
+    font-family: $ff-playfair;
+    font-size: $ff-700;
+    font-weight: 300;
+  }
+  &__list {
+    padding: 0;
+    list-style: none;
+  }
+  // PROFILE NAVIGATION
+  &__link {
+    position: relative;
+    font-family: $ff-playfair;
+    font-size: 1.8rem;
+    color: $color-dark-tint;
+    transition: color 0.3s $transition-animation-default;
+    @include hoverEffectChangeText;
+  }
+
+  &__link.active {
+    text-decoration: underline;
+    color: $color-dark;
+  }
+
+  &__item {
+    padding: 0.5rem 0;
+    transition: all 0.3s $transition-animation-default;
+  }
+
+  &__logout {
+    height: min-content;
+    border: 0;
+    background-color: transparent;
+    transition: color 0.3s $transition-animation-default;
+  }
+}
+
+.information {
+  &__info {
+    font-weight: 300;
+  }
+
+  &__details.hide {
+    display: none;
+  }
+
+  &__edit-form {
+    border: 1px solid rgba($color-dark-tint, 0.3);
+    background-color: rgba(#fff, 0.6);
+    padding: 3.4rem;
+  }
+}
+
+.address {
+  &__isdefault {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+
+  &__update-btn {
+    font-family: inherit;
+    font-size: 1.6rem;
+  }
+
+  &__edit-form {
+    padding: 3.4rem 2rem;
+    border: 1px solid rgba($color-dark-tint, 0.3);
+  }
+
+  &__editSubmit {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,30 @@
+.navigation {
+  position: relative;
+  &__heading {
+    padding: 3.4rem 0;
+    border-bottom: $border;
+    box-shadow: 0 2px 20px rgba($color-dark-tint, 0.3);
+  }
+  &__wrapper {
+    width: 100%;
+  }
+  &__title {
+    font-family: $ff-playfairSC;
+    font-size: 3.2rem;
+  }
+
+  &__navbar {
+    width: 100%;
+    padding: 2.4rem 4.8rem;
+  }
+  &__collapse-nav {
+    justify-content: space-between;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 2.4rem;
+  }
+  &__link {
+    text-transform: uppercase;
+  }
+}

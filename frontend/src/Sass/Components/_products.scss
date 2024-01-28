@@ -1,0 +1,39 @@
+.all-products {
+  height: 100%;
+  min-height: 100vh;
+  margin-bottom: 9rem;
+}
+
+.category-filter {
+  &__label {
+    font-size: 1.6rem;
+  }
+
+  &__input {
+    display: inline-block;
+    margin-right: 0.75rem;
+  }
+
+  &__btn {
+    font-size: 1.6rem;
+    background-color: $color-light;
+    &:not(.collapsed) {
+      color: $color-dark;
+      background-color: $color-light;
+    }
+
+    &:focus {
+      border-color: #849b88;
+      box-shadow: 0 0 0 0.25rem #849b88;
+    }
+  }
+
+  &__header {
+    background-color: $color-light;
+    border: 1px solid rgba($color-dark, 0.4);
+  }
+
+  &__body {
+    background-color: $color-light;
+  }
+}

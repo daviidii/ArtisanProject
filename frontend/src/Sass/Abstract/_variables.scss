@@ -1,0 +1,31 @@
+// COLORS
+$color-light: #f4f8f5;
+$color-dark: #0e1610;
+$color-dark-tint: #565c58;
+$color-primary: #bcddc2;
+
+// Font-Sizes
+$ff-1000: clamp(4.0313rem, 3.7556rem + 1.3781vw, 5.9606rem);
+$ff-900: clamp(3.3594rem, 3.1581rem + 1.0063vw, 4.7681rem);
+$ff-700: clamp(2.7994rem, 2.7549rem + 0.2223vw, 3.1106rem);
+$ff-600: clamp(1.9438rem, 1.8727rem + 0.3554vw, 2.4413rem);
+$ff-400: clamp(1.62rem, 1.5724rem + 0.2379vw, 1.9531rem);
+
+// Font-Family
+$ff-playfairSC: "Playfair Display SC", serif;
+$ff-playfair: "Playfair Display", serif;
+$ff-lato: "Lato", serif;
+
+// Others
+$category-images: "../Assets/LandingImages/vase-1.jpg",
+  "../Assets/LandingImages/candle-1.jpg",
+  "../Assets/LandingImages/ceramic-1.jpg";
+
+$collection-images: "../Assets/LandingImages/collection-1.jpg",
+  "../Assets/LandingImages/collection-2.jpg",
+  "../Assets/LandingImages/collection-3.jpg",
+  "../Assets/LandingImages/collection-4.jpg";
+
+$border: 0.5px solid rgba($color-dark, 0.3);
+$overlay-color: rgba($color-dark, 0.3);
+$transition-animation-default: cubic-bezier(0.45, 0, 0.55, 1);

@@ -1,0 +1,52 @@
+.product-modal {
+  &__box {
+    padding: 3.4rem;
+  }
+  &__body {
+    padding: 4.4rem;
+  }
+  &__dialog {
+    max-width: 1440px;
+  }
+  &__content {
+    background-color: $color-light;
+    color: $color-dark;
+    border-radius: 0;
+  }
+
+  &__title {
+    font-family: $ff-playfairSC;
+    font-size: $ff-700;
+  }
+
+  &__description {
+    font-size: $ff-400;
+    font-weight: 300;
+    color: $color-dark-tint;
+  }
+
+  &__price {
+    font-size: 1.8rem;
+  }
+
+  &__stock {
+    color: #9a9d9b;
+    font-size: 1.4rem;
+  }
+
+  &__btn {
+    position: relative;
+    border: 0;
+    padding: 1rem 1.2rem;
+    margin-right: 1rem;
+    background: transparent;
+
+    @include elementAfter;
+    @include elementAfterAnimation;
+  }
+
+  &__img {
+    object-fit: cover;
+    object-position: center;
+  }
+}

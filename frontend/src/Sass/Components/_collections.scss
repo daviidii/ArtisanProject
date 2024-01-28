@@ -1,0 +1,39 @@
+.collections {
+  &__item {
+    height: 50rem;
+    padding: 1.2rem;
+  }
+  &__item:hover &__title {
+    color: $color-primary;
+    transition: all 0.3s $transition-animation-default;
+  }
+  &__item:hover &__icon-wrapper {
+    background-color: #849b88;
+    border-color: #849b88;
+    transition: all 0.3s $transition-animation-default;
+  }
+  &__bg {
+    height: 100%;
+  }
+  &__title {
+    font-family: $ff-playfairSC;
+    font-size: $ff-700;
+    color: $color-light;
+    transition: all 0.3s $transition-animation-default;
+  }
+  &__body {
+    position: relative;
+    padding: 2.4rem;
+    z-index: 99;
+  }
+
+  &__icon-wrapper {
+    width: max-content;
+    padding: 1.2rem;
+    margin: 2rem 0;
+    border: $border;
+    border-color: $color-light;
+    border-radius: 90rem;
+    transition: all 0.3s $transition-animation-default;
+  }
+}
